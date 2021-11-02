@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function searchLocation(arr, number) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === number) {
+                alert("vị trí của " + number + " là : " + i)
+                break;
+            }
+        }
+        alert(" Phần tử " + number + " không có trong mảng")
+    }
+
+    let arrOne = [1, 3, 5, 7, 9, 10]
+    searchLocation(arrOne, 11)
+</script>
+</body>
+</html>

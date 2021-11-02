@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+  function demKyTuNguyenAm(arr) {
+    let count = 0
+    let str = arrOne.toLowerCase()
+    for (let i = 0; i < arr.length; i++) {
+      let check = str.charAt(i)
+      if(check === 'a' || check === 'e' || check === 'i' || check === 'o' || check === 'u') {
+        count += 1
+      }
+    }
+    if(count === 0) {
+      return false
+    }else if(count > 0) {
+      return "Số ký tự nguyên âm là : " + count
+    }
+  }
+  let arrOne = " Hom nay toi met "
+ let result =  demKyTuNguyenAm(arrOne)
+  alert(result)
+</script>
+</body>
+</html>
